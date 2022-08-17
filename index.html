@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+
+</head>
+<body>
+  <main>
+    <div class="pattern">
+
+      <div class="pattern-circle"></div>
+    </div>
+    <div class="caption">
+      <h1>  Simple, traffic-based pricing
+      </h1>
+      <p>  Sign-up for our 30-day trial. <br>
+        No credit card required. 
+      </p>
+    </div>
+    <div class="main-content">
+      <div class="container top"></div>
+      <p class="views"><span id="page-view" ></span> pageviews</p>
+      <input type="range" id="range" min="0" max="4" value="2" >
+      <p id="price-box"><span id="price" ></span>/month</p>
+      <div class="type">
+        <span>Monthly Billing</span>
+        <label class="switch">
+          <input id="check" type="checkbox" value="true">
+          <span class="slider"></span>
+        </label>
+        <span>Yearly Billing</span>
+        <span class="discount"></span>  
+      </div>
+      <hr>
+      <div class="container bottom"></div>
+      <div class="advantage-list">
+        <p><span><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg></span>
+          Unlimited websites</p>
+          <p><span><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg></span>
+            100% data ownership</p>
+          <p><span><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg></span>
+            Email reports</p>
+      </div>
+
+      <button>Start my trial</button>
+    </div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
